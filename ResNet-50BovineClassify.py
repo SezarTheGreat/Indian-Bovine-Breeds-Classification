@@ -3,6 +3,10 @@ import pickle
 import numpy as np
 import tensorflow as tf
 
+# Force TensorFlow to use CPU
+tf.config.set_visible_devices([], 'GPU')
+print("TensorFlow is configured to use CPU.")
+
 # --- Configuration ---
 MODEL_PATH = 'best_resnet50_bovine_classifier.pkl'
 IMG_HEIGHT, IMG_WIDTH = 224, 224
