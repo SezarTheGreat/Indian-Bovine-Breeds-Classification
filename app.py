@@ -4,6 +4,10 @@ import pickle
 import numpy as np
 import tensorflow as tf
 
+# Force TensorFlow to use CPU
+tf.config.set_visible_devices([], 'GPU')
+print("TensorFlow is configured to use CPU.")
+
 # --- Flask App Initialization ---
 # We specify template_folder and static_folder to be the same directory
 # although we will serve them manually for clarity.
