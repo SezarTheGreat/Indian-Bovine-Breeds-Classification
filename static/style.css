@@ -1,0 +1,49 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #1c1e21;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #606770;
+    margin-bottom: 20px;
+}
+
+.video-container {
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    display: inline-block;
+    line-height: 0;
+}
+
+#webcam {
+    transform: scaleX(-1); /* Mirror the webcam feed */
+    max-width: 100%;
+    height: auto;
+}
+
+#prediction {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #007bff;
+    min-height: 30px;
+}
